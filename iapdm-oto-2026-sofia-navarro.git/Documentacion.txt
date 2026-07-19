@@ -1,0 +1,22 @@
+ APLICACIÓN ANDROID DE REGISTRO DE EMPLEADOS
+=============================================
+
+ESTRUCTURA DEL PROYECTO
+-----------------------
+* com.sofianavarro.myapplication/
+  ├── ui.theme/               <- Configuración de estilos y paleta de colores (Material Design Builder).
+  │    ├── Color.kt
+  │    ├── Theme.kt
+  │    └── Type.kt
+  ├── Empleado.kt             <- Modelo de datos que define la entidad del empleado.
+  ├── PantallaEmpleados.kt    <- Interfaz gráfica principal construida en Jetpack Compose (Formulario, LazyColumn y LazyRow).
+  └── MainActivity.kt         <- Punto de entrada de la aplicación y control de los ciclos de vida (onStart, onStop, onDestroy).
+
+CÓMO EJECUTAR LA APLICACIÓN
+---------------------------
+1. Clonar el repositorio Git correspondiente en su entorno local.
+2. Abrir el proyecto directamente desde Android Studio.
+3. Esperar que finalice la sincronización inicial de dependencias de Gradle (Gradle Sync).
+4. Iniciar un emulador de Android.
+5. Hacer clic en el botón 'Run' (ícono de flecha verde en la barra superior de Android Studio).
+6. Para auditar los ciclos de vida requeridos, abrir la pestaña 'Logcat' de Android Studio y filtrar utilizando el tag: MainActivityLifecycle
